@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Students — General Register</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="site-header">
+    <div class="logo">
+      <img src="images/school_logo.png" alt="Logo">
+      <h1>Al-Ilm School</h1>
+    </div>
+    <nav class="main-nav">
+      <a href="Page1.html">Home</a>
+      <a href="Page2.html">Students</a>
+      <a href="page3.html">Teachers</a>
+      <a href="Page4.html">Fees</a>
+      <a href="Page5.html">About</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>General Register — Students</h2>
+      <p>Table mein student records dikheinge. (Sample data)</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Admission No</th>
+              <th>Name</th>
+              <th>Class</th>
+              <th>Section</th>
+              <th>Date of Birth</th>
+              <th>Guardian</th>
+              <th>Contact No</th>
+              <th>Monthly Fee</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2025-001</td><td>Aisha Khan</td><td>V</td><td>A</td><td>2013-05-12</td><td>Mr. Khan</td><td>0300-1234567</td><td>Rs. 4,000</td>
+            </tr>
+            <tr>
+              <td>2025-002</td><td>Ahmed Ali</td><td>V</td><td>B</td><td>2013-08-09</td><td>Mrs. Ali</td><td>0301-9876543</td><td>Rs. 4,000</td>
+            </tr>
+            <tr>
+              <td>2025-003</td><td>Sana Raza</td><td>III</td><td>A</td><td>2015-02-20</td><td>Mr. Raza</td><td>0302-5556667</td><td>Rs. 4,000</td>
+            </tr>
+            <tr>
+              <td>2025-004</td><td>Bilal Hussain</td><td>VII</td><td>C</td><td>2011-11-01</td><td>Mr. Hussain</td><td>0303-4445556</td><td>Rs. 5,000</td>
+            </tr>
+            <tr>
+              <td>2025-005</td><td>Maryam Shah</td><td>Nursery</td><td>A</td><td>2020-06-15</td><td>Mrs. Shah</td><td>0304-2223334</td><td>Rs. 3,000</td>
+            </tr>
+            <tr>
+              <td>2025-006</td><td>Owais Ahmed</td><td>X</td><td>B</td><td>2008-01-27</td><td>Mr. Ahmed</td><td>0305-1112223</td><td>Rs. 5,000</td>
+            </tr>
+            <tr>
+              <td>2025-007</td><td>Fatima Noor</td><td>I</td><td>A</td><td>2017-09-05</td><td>Mrs. Noor</td><td>0306-7778889</td><td>Rs. 4,000</td>
+            </tr>
+            <tr>
+              <td>2025-008</td><td>Hassan Javed</td><td>IV</td><td>C</td><td>2014-03-18</td><td>Mr. Javed</td><td>0307-3334445</td><td>Rs. 4,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Add Student (HTML form only)</h2>
+      <form class="add-student-form">
+        <div class="form-row">
+          <label>Admission No<input type="text" name="admission_no" required></label>
+          <label>Name<input type="text" name="name" required></label>
+        </div>
+        <div class="form-row">
+          <label>Class
+            <select name="class">
+              <option>Nursery</option>
+              <option>KG</option>
+              <option>I</option>
+              <option>II</option>
+              <option>III</option>
+              <option>IV</option>
+              <option>V</option>
+              <option>VI</option>
+              <option>VII</option>
+              <option>VIII</option>
+              <option>IX</option>
+              <option>X</option>
+            </select>
+          </label>
+          <label>Section<input type="text" name="section"></label>
+        </div>
+        <div class="form-row">
+          <label>Date of Birth<input type="date" name="dob"></label>
+          <label>Guardian Name<input type="text" name="guardian"></label>
+        </div>
+        <div class="form-row">
+          <label>Contact No<input type="tel" name="contact"></label>
+          <label>Monthly Fee<input type="text" name="fee" placeholder="Rs. 4,000"></label>
+        </div>
+
+        <p><a class="btn" href="#">Add Student</a></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">&copy; 2025 Al-Ilm School</footer>
+</body>
+</html>
